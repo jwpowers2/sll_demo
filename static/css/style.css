@@ -1,0 +1,51 @@
+*{
+font-family:sans-serif;
+}
+
+#wrapper {
+margin: 0 auto;
+width: 1000px;
+padding: 10px;
+border: 2px solid black;
+}
+
+.top_block{
+display:block;
+height: 100px;
+
+}
+
+.middle_block{
+display:block;
+height: 300px;
+}
+.middle_block_tile{
+height: 250px;
+width: 600px;
+display:inline-block;
+margin: 20px;
+border: 2px solid black;
+text-align:center;
+}
+
+.bottom_block{
+display:block;
+height: 300px;
+border: 2px solid black;
+}
+
+textarea{
+width: 80%;
+margin:20px 100px;
+height: 250px;
+border: 2px solid black;
+}
+
+.ticker_block{
+height: 100px;
+width: 150px;
+display:inline-block;
+margin: 20px;
+border: 2px solid black;
+text-align:center;
+}

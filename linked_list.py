@@ -7,6 +7,7 @@ class Node:
        self.nextNode = nextNode
 
    def getData(self):
+       # get price of the stock
        return self.data.name
 
    def setData(self,val):
@@ -23,6 +24,7 @@ class LinkedList:
    def __init__(self,head = None):
        self.head = head
        self.size = 0
+       #self.tail = None
 
    def getSize(self):
        return self.size
@@ -61,5 +63,16 @@ class LinkedList:
            print(curr.data.name)
            curr = curr.getNextNode()
 
-
+   def rotate_queue(self):
+       # find the last one and make it the head
+       curr = self.head
+       tail = None
+       original_head = self.head
+       while curr:
+	   tail = curr
+           curr = curr.getNextNode()
+           
+       else:
+	   self.head = tail       
+           self.head.nextNode = original_head
 

@@ -1,0 +1,30 @@
+<html>
+    <head>
+      <title>Ninja Page</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <!--<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>-->
+    </head>
+    <body>
+
+    <div id="wrapper">
+        <div class="top_block">
+            <form action="/process_money" method="post">
+	    <label for="gold">Your Gold: </label>
+            <input type="text" name="gold" placeholder="0" value="{{session['money']}}"/>
+            <input type="submit" name="reset" value="reset"/>
+            </form>
+	</div>
+        <div class="middle_block">
+            <div class="middle_block_tile">
+	    </div>
+	</div>
+        <div class="bottom_block">
+	{% for stock in stock_list %}
+            <div class="ticker_block">{{stock}}</div>
+	{% endfor %}
+	</div>
+
+    </div>
+
+    </body>
+</html>
